@@ -28,11 +28,60 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* UTILITY */
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  margin: auto;
+}
+
+/* SEARCHBAR */
+.searchButton {
+  background-color: inherit;
+  border-radius: 0 24px 24px 0;
+  transition: background-color 0.5s linear;
+  width: 15%;
+}
+
+.searchButton:hover {
+  background-color: #c1e1ec;
+}
+
+.searchCont {
+  padding: 5% 30px;
+  width: 60%;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.searchGroupElement {
+  border: 1px solid transparent;
+  height: 44px;
+}
+
+.searchInput {
+  border-radius: 24px 0 0 24px;
+  border-right: 1px solid lightgray;
+  padding: 0 8px 0 20px;
+  width: 85%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputGroup {
+  border-radius: 24px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  width: 70%;
+}
+
+.searchHeading {
+  font-size: x-large;
+  margin: 0 0 20px 0;
 }
